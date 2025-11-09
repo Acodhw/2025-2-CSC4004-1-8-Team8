@@ -206,6 +206,7 @@ const SidePanel = ({
             </ResizablePanel>
           </>
         )}
+        {/*
         <div
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
@@ -226,9 +227,11 @@ const SidePanel = ({
             side="right"
           />
         </div>
+        
         {(!isCollapsed || minSize > 0) && !isSmallScreen && !fullCollapse && (
           <ResizableHandleAlt withHandle className="bg-transparent dark:text-white" />
         )}
+          
         <ResizablePanel
           tagName="nav"
           id="controls-nav"
@@ -261,6 +264,7 @@ const SidePanel = ({
               : 'opacity-100',
           )}
         >
+          
           {interfaceConfig.modelSelect && (
             <div
               className={cn(
@@ -282,6 +286,7 @@ const SidePanel = ({
             links={Links}
           />
         </ResizablePanel>
+        */}
       </ResizablePanelGroup>
       <button
         aria-label="Close right side panel"
