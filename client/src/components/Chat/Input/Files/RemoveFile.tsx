@@ -1,5 +1,5 @@
 export default function RemoveFile({ onRemove }: { onRemove: () => void }) {
-  return (
+  return null; /*(
     <button
       type="button"
       className="absolute right-1 top-1 -translate-y-1/2 translate-x-1/2 rounded-full border border-gray-500 bg-gray-500 p-0.5 text-white transition-colors hover:bg-gray-700 hover:opacity-100 group-hover:opacity-100 md:opacity-0"
@@ -23,5 +23,5 @@ export default function RemoveFile({ onRemove }: { onRemove: () => void }) {
         </svg>
       </span>
     </button>
-  );
+  );*/
 }

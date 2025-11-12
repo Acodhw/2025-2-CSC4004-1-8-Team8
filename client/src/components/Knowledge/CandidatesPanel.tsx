@@ -36,7 +36,7 @@ export default function CandidatesPanel() {
         {seed.map((c) => (
           <div
             key={c}
-            className="mb-2 flex items-center justify-between rounded-md border border-border-light bg-surface-secondary px-2 py-1 text-sm text-white"
+            className="mb-2 flex items-center justify-between rounded-md border border-border-light bg-surface-secondary px-2 py-1 text-sm text-gray-900 dark:text-gray-100"
           >
             <span className="text-text-primary/90">{c}</span>
             <Button size="sm" variant="outline" className="ml-2" onClick={() => addToGraph(c)}>
