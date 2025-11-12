@@ -4,7 +4,6 @@ import { AttachmentIcon } from '~/components/svg';
 import { useLocalize } from '~/hooks';
 import { cn } from '~/utils';
 
-
 const AttachFile = ({
   isRTL,
   disabled,
@@ -18,7 +17,7 @@ const AttachFile = ({
   const inputRef = useRef<HTMLInputElement>(null);
   const isUploadDisabled = disabled ?? false;
 
-  return null /*(
+  return (
     <FileUpload ref={inputRef} handleFileChange={handleFileChange}>
       <TooltipAnchor
         role="button"
@@ -51,8 +50,8 @@ const AttachFile = ({
           <AttachmentIcon />
         </div>
       </TooltipAnchor>
-    </FileUpload>  
-  )*/;
+    </FileUpload>
+  );
 };
 
 export default React.memo(AttachFile);
